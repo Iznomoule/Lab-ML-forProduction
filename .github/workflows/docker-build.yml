@@ -22,8 +22,8 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t <your-dockerhub-username>/<image-name>:latest .
-          docker tag <your-dockerhub-username>/<image-name>:latest <your-dockerhub-username>/<image-name>:latest
+          docker build -t iznomoule/api-testing-app:latest .
+          docker tag iznomoule/api-testing-app:latest iznomoule/api-testing-app:latest
 
       - name: Push Docker image to DockerHub
-        run: docker push <your-dockerhub-username>/<image-name>:latest
+        run: docker push iznomoule/api-testing-app:latest
